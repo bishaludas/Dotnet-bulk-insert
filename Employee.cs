@@ -8,11 +8,15 @@ namespace learn
     {
         public string Name { get; }
         public string Location { get; }
+        public List<Hobby> EmpHobby {get;}
+
         
-        public Employee(string name, string location)
+        public Employee(string name, string location, List<Hobby> empHobby)
         {
             Name = name;
             Location = location;
+            EmpHobby = empHobby;
+
         }
 
         public override string ToString()

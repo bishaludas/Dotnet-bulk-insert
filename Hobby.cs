@@ -6,18 +6,20 @@ namespace learn
 {
     class Hobby
     {
-        public string Hobbbyname { get; }
+        public int Eid { get; set;}
+        public string Hobbyname { get; }
         public string Details { get; }
         
         public Hobby(string hobby, string details)
         {
-            Hobbbyname = hobby;
+            Eid=0;
+            Hobbyname = hobby;
             Details = details;
         }
 
         public override string ToString()
         {
-            return $"{Hobbbyname}: {Details}";
+            return $"{Hobbyname}: {Details}";
         }
     }
         
